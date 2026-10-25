@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4f5">
+  <meta name="description" content="Areeba Blooms — thoughtful bouquets, money bouquets, teddy gifts, chocolates, jewellery and custom gifts.">
+  <title>Areeba Blooms | Custom Bouquets & Gifts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span data-en="Made with love, wrapped just for you ✦ Karachi delivery available" data-ur="محبت سے تیار کردہ تحفے ✦ کراچی میں ڈیلیوری دستیاب">Made with love, wrapped just for you ✦ Karachi delivery available</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Areeba Blooms home"><span class="brand-mark">✿</span><span>areeba<span class="brand-light">blooms</span><small>FLOWERS • GIFTS • MOMENTS</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home" data-en="Home" data-ur="ہوم">Home</a>
+      <a href="#collections" data-en="Collections" data-ur="کلیکشنز">Collections</a>
+      <a href="#customize" data-en="Customize" data-ur="اپنی مرضی سے بنوائیں">Customize</a>
+      <a href="#about" data-en="Our Story" data-ur="ہمارے بارے میں">Our Story</a>
+      <a href="#contact" data-en="Contact" data-ur="رابطہ">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="languageToggle" title="Change language">اردو</button>
+      <button class="icon-button" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">☾</button>
+      <button class="cart-button" id="cartOpen">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/money-bouquet-1.jpg">
+        <source src="assets/background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow" data-en="THE ART OF GIFTING" data-ur="تحفے دینے کا خوبصورت انداز">THE ART OF GIFTING</span>
+        <h1 data-en="A little bouquet.<br>A lot of love." data-ur="ایک پیارا سا بُوکے،<br>بہت ساری محبت۔">A little bouquet.<br>A lot of love.</h1>
+        <p data-en="Thoughtful flowers and gifts, beautifully made for your unforgettable moments." data-ur="آپ کے خاص لمحات کے لیے خوبصورتی سے تیار کیے گئے پھول اور تحفے۔">Thoughtful flowers and gifts, beautifully made for your unforgettable moments.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#collections" data-en="Explore collections ↗" data-ur="کلیکشن دیکھیں ↗">Explore collections ↗</a><a class="text-link" href="#customize" data-en="Create your own" data-ur="اپنا بُوکے بنوائیں">Create your own <span>↗</span></a></div>
+      </div>
+      <div class="hero-note"><span>✿</span><span data-en="Made to make someone smile" data-ur="کسی کے چہرے پر مسکراہٹ کے لیے">Made to make someone smile</span></div>
+      <a class="scroll-cue" href="#collections">SCROLL TO DISCOVER ↓</a>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✿</span><p data-en="Made with care" data-ur="محبت سے تیار کردہ">Made with care</p></div>
+      <div><span>♡</span><p data-en="Personalized gifts" data-ur="آپ کی پسند کے تحفے">Personalized gifts</p></div>
+      <div><span>✧</span><p data-en="Beautifully wrapped" data-ur="خوبصورت پیکنگ">Beautifully wrapped</p></div>
+      <div><span>❀</span><p data-en="Order your way" data-ur="اپنی پسند سے آرڈر کریں">Order your way</p></div>
+    </section>
+
+    <section class="section collections-section" id="collections">
+      <div class="section-heading reveal"><div><span class="eyebrow" data-en="FIND YOUR PERFECT GIFT" data-ur="اپنا پسندیدہ تحفہ منتخب کریں">FIND YOUR PERFECT GIFT</span><h2 data-en="Collections made for <em>every feeling.</em>" data-ur="ہر احساس کے لیے <em>خاص کلیکشن۔</em>">Collections made for <em>every feeling.</em></h2></div><p data-en="From grand surprises to little gestures, there is a lovely something for everyone." data-ur="بڑے سرپرائز سے لے کر چھوٹی خوشیوں تک، ہر کسی کے لیے کچھ خاص۔">From grand surprises to little gestures, there is a lovely something for everyone.</p></div>
+      <div class="filter-row" id="categoryFilters" aria-label="Filter collections"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="custom-section" id="customize">
+      <div class="custom-image"><img src="assets/jewellery-bouquet-1.jpg" alt="Pink gift bouquet with jewellery" loading="lazy"><div class="image-sticker">YOUR<br>IDEA ✿</div></div>
+      <div class="custom-copy reveal">
+        <span class="eyebrow" data-en="MADE JUST FOR YOU" data-ur="صرف آپ کے لیے">MADE JUST FOR YOU</span>
+        <h2 data-en="Dream it.<br><em>We'll wrap it.</em>" data-ur="سوچیں اپنی پسند کا،<br><em>ہم بنا دیں گے۔</em>">Dream it.<br><em>We'll wrap it.</em></h2>
+        <p data-en="Choose your bouquet style, colours, add-ons and budget. Tell us your idea and we'll prepare a personalized order summary for you." data-ur="اپنے بُوکے کی قسم، رنگ، اضافی تحفے اور بجٹ منتخب کریں۔ اپنی پسند بتائیں، ہم آپ کے لیے آرڈر کی تفصیل تیار کریں گے۔">Choose your bouquet style, colours, add-ons and budget. Tell us your idea and we'll prepare a personalized order summary for you.</p>
+        <form id="customForm" class="custom-form">
+          <label><span data-en="Bouquet type" data-ur="بُوکے کی قسم">Bouquet type</span><select id="customType" required><option value="Custom flower bouquet">Flower bouquet</option><option value="Money bouquet">Money bouquet</option><option value="Teddy bear bouquet">Teddy bear bouquet</option><option value="Chocolate bouquet">Chocolate bouquet</option><option value="Birthday bouquet">Birthday bouquet</option><option value="Car bouquet">Car bouquet</option><option value="Jewellery bouquet">Jewellery bouquet</option><option value="Cake bouquet">Cake bouquet</option></select></label>
+          <div class="form-two"><label><span data-en="Colour palette" data-ur="رنگ">Colour palette</span><select id="customColor"><option>Blush pink & cream</option><option>Red & black</option><option>Pastel mix</option><option>White & gold</option><option>Surprise me</option></select></label><label><span data-en="Budget (PKR)" data-ur="بجٹ (روپے)">Budget (PKR)</span><select id="customBudget"><option value="1500-3000">Rs. 1,500–3,000</option><option value="3000-5000">Rs. 3,000–5,000</option><option value="5000-8000">Rs. 5,000–8,000</option><option value="8000+">Rs. 8,000+</option></select></label></div>
+          <fieldset><legend data-en="Add something extra" data-ur="مزید کیا شامل کریں؟">Add something extra</legend><div class="addon-grid"><label><input type="checkbox" value="Teddy bear"> Teddy bear</label><label><input type="checkbox" value="Chocolates"> Chocolates</label><label><input type="checkbox" value="Jewellery"> Jewellery</label><label><input type="checkbox" value="Greeting card"> Greeting card</label><label><input type="checkbox" value="Balloons"> Balloons</label><label><input type="checkbox" value="Cake"> Cake</label></div></fieldset>
+          <label><span data-en="Personal message / special requests" data-ur="خاص پیغام یا ہدایات">Personal message / special requests</span><textarea id="customMessage" rows="3" placeholder="e.g. Happy birthday, Amna! Please use pink wrapping."></textarea></label>
+          <button class="button button-dark button-wide" type="submit" data-en="Prepare my custom order ↗" data-ur="میرا کسٹم آرڈر تیار کریں ↗">Prepare my custom order ↗</button>
+          <p class="form-hint" data-en="No payment is taken on this website. Confirm final price and availability with us before ordering." data-ur="اس ویب سائٹ پر ادائیگی نہیں ہوتی۔ آرڈر سے پہلے قیمت اور دستیابی کی تصدیق کریں۔">No payment is taken on this website. Confirm final price and availability with us before ordering.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="occasion-section section">
+      <div class="section-heading centered reveal"><span class="eyebrow" data-en="FOR THE MOMENTS THAT MATTER" data-ur="خاص لمحات کے لیے">FOR THE MOMENTS THAT MATTER</span><h2 data-en="Make the moment <em>mean more.</em>" data-ur="ہر لمحے کو <em>خاص بنائیں۔</em>">Make the moment <em>mean more.</em></h2></div>
+      <div class="occasion-grid">
+        <a href="#collections" class="occasion-card occasion-birthday"><span>01 / CELEBRATE</span><h3 data-en="Birthdays" data-ur="سالگرہ">Birthdays</h3><b>↗</b></a>
+        <a href="#collections" class="occasion-card occasion-love"><span>02 / SAY IT WITH FLOWERS</span><h3 data-en="Love & romance" data-ur="محبت کے تحفے">Love & romance</h3><b>↗</b></a>
+        <a href="#customize" class="occasion-card occasion-justbecause"><span>03 / LITTLE SURPRISES</span><h3 data-en="Just because" data-ur="بغیر کسی وجہ کے خوشی">Just because</h3><b>↗</b></a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-flower">✿</div><div class="about-inner reveal"><span class="eyebrow" data-en="A NOTE FROM US" data-ur="ہماری طرف سے">A NOTE FROM US</span><h2 data-en="Gifts are little ways<br>of saying <em>you matter.</em>" data-ur="تحفے کہنے کا خوبصورت طریقہ ہیں<br>کہ <em>آپ اہم ہیں۔</em>">Gifts are little ways<br>of saying <em>you matter.</em></h2><p data-en="At Areeba Blooms, every arrangement begins with a feeling. We bring flowers, treats and thoughtful details together to make your gift feel personal." data-ur="Areeba Blooms میں ہر تحفہ ایک احساس سے شروع ہوتا ہے۔ ہم پھول، مٹھائیاں اور خوبصورت تفصیلات ملا کر آپ کے تحفے کو خاص بناتے ہیں۔">At Areeba Blooms, every arrangement begins with a feeling. We bring flowers, treats and thoughtful details together to make your gift feel personal.</p><a href="#customize" class="text-link" data-en="Let's make something lovely ↗" data-ur="آئیے کچھ خوبصورت بنائیں ↗">Let's make something lovely ↗</a></div></section>
+
+    <section class="contact-section section" id="contact"><div><span class="eyebrow" data-en="LET'S MAKE SOMEONE'S DAY" data-ur="کسی کا دن خوبصورت بنائیں">LET'S MAKE SOMEONE'S DAY</span><h2 data-en="Your next lovely gift<br>starts <em>right here.</em>" data-ur="آپ کا اگلا خوبصورت تحفہ<br><em>یہیں سے شروع ہوتا ہے۔</em>">Your next lovely gift<br>starts <em>right here.</em></h2></div><div class="contact-card"><p data-en="Have a question or a special idea? Prepare an order and send it to us on WhatsApp." data-ur="کوئی سوال یا خاص آئیڈیا ہے؟ آرڈر تیار کریں اور واٹس ایپ پر بھیجیں۔">Have a question or a special idea? Prepare an order and send it to us on WhatsApp.</p><button class="button button-dark" id="contactWhatsApp" data-en="Chat on WhatsApp ↗" data-ur="واٹس ایپ پر رابطہ کریں ↗">Chat on WhatsApp ↗</button><small data-en="Add your WhatsApp number in script.js to enable direct chat." data-ur="براہِ راست چیٹ کے لیے script.js میں اپنا واٹس ایپ نمبر شامل کریں۔">Add your WhatsApp number in script.js to enable direct chat.</small></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✿</span><span>areeba<span class="brand-light">blooms</span><small>FLOWERS • GIFTS • MOMENTS</small></span></a><p data-en="A little bouquet. A lot of love." data-ur="ایک پیارا سا بُوکے، بہت ساری محبت۔">A little bouquet. A lot of love.</p><span>© <span id="year"></span> Areeba Blooms</span></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true"><section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="panel-heading"><h2 id="cartTitle">Your bag <span id="cartCountModal">(0)</span></h2><button class="close-button" id="cartClose" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div class="cart-total"><span>Estimated subtotal</span><strong id="cartTotal">Rs. 0</strong></div><p>Prices are sample estimates; final price is confirmed after customization.</p><button class="button button-dark button-wide" id="checkoutButton">Send order on WhatsApp ↗</button></div></section></div>
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true"><section class="order-panel" role="dialog" aria-modal="true" aria-labelledby="orderTitle"><button class="close-button order-close" id="orderClose" aria-label="Close">×</button><span class="eyebrow">YOUR CUSTOM CREATION</span><h2 id="orderTitle">Your idea, beautifully wrapped.</h2><div id="orderSummary" class="order-summary"></div><div class="order-actions"><button class="button button-dark" id="sendCustomWhatsApp">Send on WhatsApp ↗</button><button class="button button-outline" id="copyOrder">Copy order details</button></div></section></div>
+  <script src="script.js"></script>
+</body>
+</html>

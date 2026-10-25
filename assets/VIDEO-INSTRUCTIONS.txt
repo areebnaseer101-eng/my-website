@@ -1,0 +1,3 @@
+Background video file required: save your chosen video as background.mp4 and place it in this assets folder.
+The uploaded HTML file was a saved Pinterest webpage, not an MP4 video, so it cannot be used as a video source.
+The website is designed to show its image background automatically until assets/background.mp4 is added.
